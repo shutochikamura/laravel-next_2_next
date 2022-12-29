@@ -1,4 +1,9 @@
-const AuthSessionStatus = ({ status, className, ...props }) => (
+type AuthSessionStatusType = {
+    status: string | string[] | null
+    className?: string
+}
+
+const AuthSessionStatus = ({ status, className, ...props }: AuthSessionStatusType) => (
     <>
         {status && (
             <div

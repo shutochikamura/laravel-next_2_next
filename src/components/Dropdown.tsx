@@ -1,14 +1,22 @@
 import React, { useState } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 
+type DropdownType = {
+    align?: string
+    width?: number | string
+    contentClasses?: string
+    trigger: React.ReactNode
+    children: React.ReactNode
+}
+
 const Dropdown = ({
     align = 'right',
     width = 48,
     contentClasses = 'py-1 bg-white',
     trigger,
     children,
-}) => {
-    let alignmentClasses
+}: DropdownType) => {
+    let alignmentClasses: string
 
     switch (width) {
         case '48':

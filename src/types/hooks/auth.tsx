@@ -23,27 +23,29 @@ export type LoginType = {
 
 export type ForgotPasswordType = {
     setErrors: Dispatch<SetStateAction<string[]>> ,
-    setStatus: Dispatch<SetStateAction<string | null>> ,
+    setStatus: Dispatch<SetStateAction<string | string[] | null>> ,
     email: string,
 }
 
 export type ResetPasswordType = {
     setErrors: Dispatch<SetStateAction<string[]>> ,
-    setStatus: Dispatch<SetStateAction<string | null>> ,
-    email: string,
+    setStatus: Dispatch<SetStateAction<string | string[] | null>> ,
+    email: string | string[],
     password: string,
     password_confirmation: string,
 }
 
 export type ResendEmailVerificationType = {
-    setStatus: Dispatch<SetStateAction<string | null>> ,
+    setStatus: Dispatch<SetStateAction<string | string[] | null>> ,
 }
 
 export type UserType = {
-    id?: number 
-    name?: string
-    email?: string
-    email_verified_at?: Date
-    created_at?: Date
-    updated_at?: Date
+    user: {
+        id?: number 
+        name?: string
+        email?: string
+        email_verified_at?: Date
+        created_at?: Date
+        updated_at?: Date
+    }
 }

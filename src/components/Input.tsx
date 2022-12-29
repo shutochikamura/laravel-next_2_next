@@ -3,7 +3,8 @@ type InputType = {
     className?: string,
     id?: string,
     type: string,
-    value: string,
+    value: string | string[],
+    name?: string
     onChange: React.ChangeEventHandler<HTMLInputElement>,
     autoFocus?: boolean,
     required?: boolean,
