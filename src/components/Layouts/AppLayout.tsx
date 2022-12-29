@@ -2,8 +2,8 @@ import Navigation from '@/components/Layouts/Navigation'
 import { useAuth } from '@/hooks/auth'
 
 type AppLayoutType = {
-    header: React.ReactNode,
-    children: React.ReactNode,
+    header: React.ReactNode
+    children: React.ReactNode
 }
 
 const AppLayout = ({ header, children }: AppLayoutType) => {

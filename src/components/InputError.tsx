@@ -1,5 +1,5 @@
 type InputErrorType = {
-    messages: string[],
+    messages: string[]
     className: string
 }
 

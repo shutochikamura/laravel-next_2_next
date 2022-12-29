@@ -1,13 +1,13 @@
 type InputType = {
-    disabled?: boolean,
-    className?: string,
-    id?: string,
-    type: string,
-    value: string | string[],
+    disabled?: boolean
+    className?: string
+    id?: string
+    type: string
+    value: string | string[]
     name?: string
-    onChange: React.ChangeEventHandler<HTMLInputElement>,
-    autoFocus?: boolean,
-    required?: boolean,
+    onChange: React.ChangeEventHandler<HTMLInputElement>
+    autoFocus?: boolean
+    required?: boolean
     autoComplete?: string
 }
 

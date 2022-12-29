@@ -1,6 +1,6 @@
 type AuthCardType = {
-    logo: React.ReactNode,
-    children: React.ReactNode,
+    logo: React.ReactNode
+    children: React.ReactNode
 }
 
 const AuthCard = ({ logo, children }: AuthCardType) => (

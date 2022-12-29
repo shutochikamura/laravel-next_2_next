@@ -1,7 +1,7 @@
 type LabelType = {
-    className?: string,
-    children: string,
-    htmlFor?: string,
+    className?: string
+    children: string
+    htmlFor?: string
 }
 
 const Label = ({ className, children, ...props }: LabelType) => (

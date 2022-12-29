@@ -1,7 +1,7 @@
 type ButtonType = {
     type?: "submit" | "button" | "reset" | undefined
     className?: string
-    children?: React.ReactNode;
+    children?: React.ReactNode
     onClick?: React.MouseEventHandler<HTMLButtonElement>
 }
 

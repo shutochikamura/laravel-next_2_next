@@ -6,7 +6,7 @@ export type UseAuthType = {
 }
 
 export type RegisterType = {
-    setErrors: Dispatch<SetStateAction<string[]>> ,
+    setErrors: Dispatch<SetStateAction<string[]>>
     name: string,
     email: string,
     password: string,
@@ -14,29 +14,29 @@ export type RegisterType = {
 }
 
 export type LoginType = {
-    setErrors: Dispatch<SetStateAction<string[]>> ,
-    setStatus: Dispatch<SetStateAction<string | string[] | null>> ,
+    setErrors: Dispatch<SetStateAction<string[]>>
+    setStatus: Dispatch<SetStateAction<string | string[] | null>>
     email: string,
     password: string,
     remember: boolean,
 }
 
 export type ForgotPasswordType = {
-    setErrors: Dispatch<SetStateAction<string[]>> ,
-    setStatus: Dispatch<SetStateAction<string | string[] | null>> ,
+    setErrors: Dispatch<SetStateAction<string[]>>
+    setStatus: Dispatch<SetStateAction<string | string[] | null>>
     email: string,
 }
 
 export type ResetPasswordType = {
-    setErrors: Dispatch<SetStateAction<string[]>> ,
-    setStatus: Dispatch<SetStateAction<string | string[] | null>> ,
-    email: string | string[],
-    password: string,
-    password_confirmation: string,
+    setErrors: Dispatch<SetStateAction<string[]>>
+    setStatus: Dispatch<SetStateAction<string | string[] | null>>
+    email: string | string[]
+    password: string
+    password_confirmation: string
 }
 
 export type ResendEmailVerificationType = {
-    setStatus: Dispatch<SetStateAction<string | string[] | null>> ,
+    setStatus: Dispatch<SetStateAction<string | string[] | null>>
 }
 
 export type UserType = {
