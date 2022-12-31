@@ -1,4 +1,4 @@
-import Navigation from '@/components/Layouts/Navigation'
+import Navigation from '@/components/organisms/Navigation'
 import { useAuth } from '@/hooks/auth'
 
 type AppLayoutType = {
