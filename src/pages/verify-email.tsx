@@ -1,6 +1,6 @@
-import ApplicationLogo from '@/components/Elements/ApplicationLogo'
+import ApplicationLogo from '@/components/atoms/ApplicationLogo'
 import AuthCard from '@/components/Layouts/AuthCard'
-import Button from '@/components/Forms/Button'
+import Button from '@/components/atoms/Button'
 import GuestLayout from '@/components/Layouts/GuestLayout'
 import Link from 'next/link'
 import { useAuth } from '@/hooks/auth'

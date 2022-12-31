@@ -1,11 +1,11 @@
-import ApplicationLogo from '@/components/Elements/ApplicationLogo'
-import Dropdown from '@/components/Elements/Dropdown'
+import ApplicationLogo from '@/components/atoms/ApplicationLogo'
+import Dropdown from '@/components/molecules/Dropdown'
 import Link from 'next/link'
-import NavLink from '@/components/Elements/NavLink'
+import NavLink from '@/components/atoms/NavLink'
 import ResponsiveNavLink, {
     ResponsiveNavButton,
-} from '@/components/Elements/ResponsiveNavLink'
-import { DropdownButton } from '@/components/Elements/DropdownLink'
+} from '@/components/atoms/ResponsiveNavLink'
+import { DropdownButton } from '@/components/molecules/DropdownLink'
 import { useAuth } from '@/hooks/auth'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
