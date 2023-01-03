@@ -1,5 +1,6 @@
 import Navigation from '@/components/organisms/Navigation'
 import { useAuth } from '@/hooks/auth'
+import { Sidebar } from '@/components/organisms/Sidebar.tsx'
 
 type AppLayoutType = {
     header: React.ReactNode
@@ -20,7 +21,12 @@ const AppLayout = ({ header, children }: AppLayoutType) => {
             </header>
 
             {/* Page Content */}
-            <main>{children}</main>
+            <main className='container'>
+                <div className='flex flex-row'>
+                    <Sidebar />
+                    {children}
+                </div>
+            </main>
         </div>
     )
 }
